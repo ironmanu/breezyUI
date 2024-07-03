@@ -1,0 +1,41 @@
+---
+import MoonIcon from "../../public/icons/MoonIcon.astro";
+import SunIcon from "../../public/icons/SunIcon.astro";
+---
+
+<div class="absolute top-5 right-10">
+  <div>
+    <button
+      type="button"
+      name="light-switch"
+      id="light-switch"
+      class="sr-only peer"
+    >
+    </button>
+
+    <script>
+      function toggleDarkMode() {
+        console.log("changing theme");
+        if (localStorage.getItem("theme") === "light") {
+          localStorage.setItem("theme", "dark");
+          document.documentElement.classList.remove("dark");
+        } else {
+          localStorage.setItem("theme", "light");
+          document.documentElement.classList.toggle("dark");
+        }
+      }
+      const lightSwitch = document.getElementById("light-switch");
+      if (lightSwitch) {
+        lightSwitch.addEventListener("click", toggleDarkMode);
+      }
+    </script>
+    <label
+      class="flex items-center justify-center cursor-pointer w-8 h-8 bg-slate-500 dark:bg-slate-100 dark:hover:bg-slate-200 hover:bg-slate-600/80 rounded-full"
+      for="light-switch"
+    >
+      <SunIcon class="hidden dark:block" />
+      <MoonIcon class="dark:hidden" />
+      <span class="sr-only">Switch light / dark version</span>
+    </label>
+  </div>
+</div>
