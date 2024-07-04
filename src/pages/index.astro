@@ -1,27 +1,25 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
 import CardComponent from "../components/CardComponent.tsx";
-
-const buttons = [
-  {
-    classes:
-      "relative dark:text-white bg-transparent border border-gray-600 dark:border-slate-100 h-8 sm:h-12 px-3 sm:px-6 shadow-sm focus:outline-none active:bg-indigo-400 before:content-[''] before:absolute before:inset-0 before:-top-0 before:bg-indigo-400/80 before:-z-10 before:translate-x-2 before:translate-y-2 before:transition-transform before:duration-200 before:ease-out hover:before:translate-x-0 hover:before:translate-y-0",
-  },
-  // {
-  //   classes:
-  //     "relative text-black dark:bg-indigo-400 border border-slate-100 h-8 sm:h-12 px-3 sm:px-6 shadow-sm focus:outline-none transition-all duration-100 shadow-[5px_5px_#1B1B2D] hover:translate-x-1 hover:translate-y-1 hover:shadow-[0px_0px_rgb(82_82_82)] ]",
-  // },
-];
+import { buttons } from "../consts/buttons";
+import Toast from "../components/Toast.astro";
 ---
 
 <Layout title="BREEZY UI.">
   <main>
-    <div class="mx-auto max-w-5xl px-6 py-5 text-center lg:px-8">
+    <div class="mx-auto max-w-5xl px-6 py-10 text-center lg:px-8">
       <ul
-        class="mx-auto sm:mt-5 grid max-w-2xl grid-cols-2 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-14"
+        class="mx-auto sm:mt-5 grid max-w-2xl grid-cols-2 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-10"
       >
-        {buttons.map((button) => <CardComponent classes={button.classes} />)}
+        {
+          buttons.map((button) => (
+            <CardComponent
+              client:load
+              text={button.text}
+              classes={button.classes}
+            />
+          ))
+        }
       </ul>
     </div>
   </main>
