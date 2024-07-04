@@ -5,14 +5,10 @@ export default {
   theme: {
     extend: {
       textColor: {
-        DEFAULT: "text-gray-800", // Color de texto por defecto (gris oscuro en este ejemplo)
-      },
-      colors: {
-        astro: "#ff5a00", // Naranja de Astro (ajústalo si es diferente)
-        tailwind: "#38bdf8", // Azul de Tailwind (ajústalo si es diferente)
+        DEFAULT: "text-gray-800",
       },
       animation: {
-        "text-gradient": "text-gradient 1.5s linear infinite",
+        "text-gradient": "text-gradient 2.5s linear infinite",
       },
       keyframes: {
         "text-gradient": {
