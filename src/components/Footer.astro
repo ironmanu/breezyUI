@@ -1,0 +1,25 @@
+---
+import AstroIcon from "../../public/icons/AstroIcon.astro";
+import StarButton from "./buttons/StarButton.astro";
+---
+
+<footer>
+  <div
+    class="w-full flex flex-col items-center justify-center p-5 bg-indigo-400 dark:bg-indigo-500/80"
+  >
+    <p class="text-white flex gap-1 inline">
+      Crafted with <AstroIcon class="px-2" /> by <a
+        class="hover:underline"
+        href="https://github.com/ironmanu"
+        aria-label="ironmanu github"
+        target="_blank"
+      >
+        IronManu.</a
+      >
+    </p>
+    <div class="inline flex align-center mt-2 items-center gap-2">
+      <p class="text-white">Liked it?</p>
+      <StarButton />
+    </div>
+  </div>
+</footer>
