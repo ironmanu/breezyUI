@@ -25,7 +25,7 @@ const Card: React.FC<CardProps> = ({ classes = "", text = "Click me" }) => {
   };
 
   return (
-    <li className="rounded-2xl bg-indigo-100/80 dark:bg-gray-900/60 z-[1] mx-auto px-4 py-4 sm:h-72 aspect-square border border-indigo-400 dark:border-gray-300/40 shadow">
+    <article className="rounded-2xl bg-indigo-100/80 dark:bg-gray-900/60 z-[1] mx-auto px-4 py-4 sm:h-72 aspect-square border border-indigo-400 dark:border-gray-300/40 shadow">
       <section className="relative">
         <button className="absolute top-0 right-0" name='copyClipboard' aria-label='Copy button to clipboard' onClick={copyToClipboard}>
         {isCopied ? <CheckIcon className="text-gray-800  dark:text-indigo-300" /> : <CopyIcon className="text-gray-800 dark:text-indigo-300" />} 
@@ -37,7 +37,7 @@ const Card: React.FC<CardProps> = ({ classes = "", text = "Click me" }) => {
         </div>
       </section>
       <Toaster/>   
-    </li>
+    </article>
   );
 };
 
