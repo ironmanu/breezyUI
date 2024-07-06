@@ -14,6 +14,7 @@ import { buttons } from "../consts/buttons";
           buttons.map((button) => (
             <CardComponent
               client:load
+              name={button.name}
               text={button.text}
               classes={button.classes}
             />
