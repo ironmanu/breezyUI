@@ -1,0 +1,36 @@
+---
+const { message, type = "success" } = Astro.props;
+---
+
+<div class={`toast toast-${type}`} role="alert">
+  <div class="toast-content">
+    <p class="toast-message">{message}</p>
+  </div>
+</div>
+
+<style>
+  .toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 100; /* Asegurarse de que esté por encima de otros elementos */
+    transition: opacity 0.3s ease-in-out; /* Transición suave */
+  }
+
+  .toast-success {
+    background-color: green;
+    color: white;
+  }
+
+  .toast-error {
+    background-color: red;
+    color: white;
+  }
+
+  .toast-hidden {
+    opacity: 0;
+  }
+</style>

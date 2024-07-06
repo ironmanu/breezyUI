@@ -1,14 +1,13 @@
 ## Breezy UI
 
-Breezy UI is an open-source project for any developer who wants to have access to Tailwind components without needing to install any other to their project. It is crafted with Astro and it's 
- · [Report error]([issues-url]) · [Sugest somenthing]([issues-url])
-
+Breezy UI is an open-source project for any developer who wants to have access to Tailwind components without needing to install any other to their project. It is crafted with Astro and it's
+· [Report error]([issues-url]) · [Sugest somenthing]([issues-url])
 
 ### Screenshot of BreezyUI
 
 ![Computer screenshot](https://github.com/ironmanu/breezyUI/blob/master/public/desktopScreenshot.png)
 
-## To Start
+## To Star
 
 ### Prerequisites
 
@@ -35,21 +34,20 @@ Breezy UI is an open-source project for any developer who wants to have access t
 2. Install NPM packages
 
    ```sh
-   pnpm install 
+   pnpm install
    ```
 
-   or 
-
+   or
 
    ```sh
-   npm install 
+   npm install
    ```
 
 3. Execute
    ```sh
    pnpm run dev
    ```
-   or 
+   or
    ```sh
    npm run dev
    ```
@@ -65,7 +63,6 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-
 ## Contributions to the project
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create any contributions you make are **greatly appreciated**!
@@ -74,21 +71,25 @@ If you have a suggestion that would make this better, please [_fork_]([fork-url]
 
 Quick guide:
 
-1.[_fork_]([fork-url]) from the project.
-2. Clone your [_fork_]([fork-url]) (`git clone <URL del fork>`)
-3. Add the repo (`git remote add upstream <URL original repo>`)
-4. Create your feature branch (`git switch -c feature/YourFeature`)
-5. Create your changes (`git commit -m 'Add: alguna YourFeature'`)
-6. Make a push on the branch (`git push origin feature/YourFeature`)
-7. Open [_pull request_]([pulls-url])
+1. [_Fork_]([fork-url]) from the project.
 
+2. Clone your [_fork_]([fork-url]) (`git clone <URL del fork>`)
+
+3. Add the repo (`git remote add upstream <URL original repo>`)
+
+4. Create your feature branch (`git switch -c feature/YourFeature`)
+
+5. Create your changes (`git commit -m 'Add: alguna YourFeature'`)
+   
+6. Make a push on the branch (`git push origin feature/YourFeature`)
+
+7. Open [_pull request_]([pulls-url])
 
 ## 🛠️ Stack
 
 - [![Astro][astro-badge]][astro-url] - The web framework for content-driven websites.
 - [![Typescript][typescript-badge]][typescript-url] - JavaScript with syntax for types.
 - [![Tailwind CSS][tailwind-badge]][tailwind-url] - A utility-first CSS framework for rapidly building custom designs.
-
 
 [astro-url]: https://astro.build/
 [typescript-url]: https://www.typescriptlang.org/
