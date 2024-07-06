@@ -8,7 +8,7 @@ Breezy UI is an open-source project for any developer who wants to have access t
 
 ![Computer screenshot](https://github.com/ironmanu/breezyUI/blob/master/public/desktopScreenshot.png)
 
-## To Star
+## To Start
 
 ### Prerequisites
 
