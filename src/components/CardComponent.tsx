@@ -35,7 +35,7 @@ const Card: React.FC<CardProps> = ({ classes = "", text = "Click me", name = "" 
       </section>
       <section className="items-center align-center h-full">
         <div className="flex items-center justify-center h-full">
-          <button type="button" name='generic button' aria-label='demo button for showing styles' className={classes}>{text}</button>
+          <button type="button" name='generic button' aria-label='demo button for showing styles' className={classes}  onClick={copyToClipboard} >{text} </button>
         </div>
       </section>
       <Toaster/>   
