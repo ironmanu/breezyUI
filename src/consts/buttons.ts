@@ -42,10 +42,15 @@ export const buttons = [
         "relative text-gray-900 dark:text-white dark:text-white bg-indigo-300 dark:bg-indigo-400 border border-slate-100 dark:border-gray-700 rounded-md h-8 sm:h-12 px-3 sm:px-6 shadow-sm focus:outline-none after:content-[''] after:rounded-md after:absolute after:inset-0 after:bg-gray-800 dark:after:bg-slate-300 after:-z-10 after:translate-x-2 after:translate-y-2 after:transition-transform after:duration-200 after:ease-out active:after:translate-x-0 active:after:translate-y-0",
     },
     {
-      name: "Border appeares on hover",
+      name: "Underline covers on hover",
       text: "Hover me",
       classes:
-        "relative text-gray-900 dark:text-white rounded-md h-8 sm:h-12 px-3 sm:px-6 shadow-xl hover:border-2 hover:border-gray-900 dark:hover:border-slate-100",
+        "relative text-gray-900 dark:text-white before:absolute before:bg-indigo-400  before:z-[-10] before:h-full before:w-full before:origin-bottom before:scale-y-[0.25] hover:before:scale-y-100 before:transition-transform before:ease-out before:duration-300",
     },
-
+    // {
+    //   name: "Border appeares on hover",
+    //   text: "Hover me",
+    //   classes:
+    //     "relative text-gray-900 dark:text-white rounded-md h-8 sm:h-12 px-3 sm:px-6 shadow-xl hover:border-4 hover:border-indigo-400 dark:hover:border-indigo-400",
+    // },   
 ]
